@@ -21,6 +21,7 @@ def get_board_id(platform: Platform) -> int:
         Platform.Pixhawk4: 50,
         Platform.Pixhawk6X: 53,
         Platform.CubeOrange: 140,
+        Platform.CUAV_X7: 1010,
     }
     return ardupilot_board_ids.get(platform, -1)
 

@@ -107,6 +107,7 @@ class Platform(str, Enum):
     Pixhawk4 = "Pixhawk4"
     Pixhawk6X = "Pixhawk6X"
     CubeOrange = "CubeOrange"
+    CUAV_X7 = "CUAV-X7"
     GenericSerial = "GenericSerial"
     Navigator = "navigator"
     Argonot = "argonot"
@@ -119,6 +120,7 @@ class Platform(str, Enum):
             Platform.Pixhawk4: PlatformType.Serial,
             Platform.Pixhawk6X: PlatformType.Serial,
             Platform.CubeOrange: PlatformType.Serial,
+            Platform.CUAV_X7: PlatformType.Serial,
             Platform.GenericSerial: PlatformType.Serial,
             Platform.Navigator: PlatformType.Linux,
             Platform.Argonot: PlatformType.Linux,
