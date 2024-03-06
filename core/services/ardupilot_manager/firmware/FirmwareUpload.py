@@ -13,7 +13,7 @@ class FirmwareUploader:
     def __init__(self) -> None:
         self._autopilot_port: pathlib.Path = pathlib.Path("/dev/autopilot")
         self._baudrate_bootloader: int = 115200
-        self._baudrate_flightstack: int = 57600
+        self._baudrate_flightstack: int = 115200
 
         binary_path = shutil.which(self.binary_name())
         if binary_path is None:
